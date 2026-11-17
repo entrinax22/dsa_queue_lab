@@ -174,9 +174,18 @@ Complete the starter code provided by your instructor.
 4.  Implement `isEmpty()` and `size()`.
 5.  Complete the `display()` method.
 6.  Complete the menu operations using `readline`.
-7.  Validate the priority input so only `1`, `2`, or `3` is accepted.
-8.  Run and test your program using the initial test records.
-9.  Test what happens when you try to serve or view a patient while the
+7.  Validate all required patient information before inserting a record into the queue.
+   **Expected behavior:**
+    1. Empty patient name → Reject.
+    2. Empty patient ID → Reject.
+    3. Duplicate patient record → Reject.
+    4. Invalid priority → Reject.
+    5. Valid, unique patient record → Accept and enqueue.
+
+Dequeue or front when the queue is empty → Display an appropriate message instead of causing an error.
+8.  Validate the priority input so only `1`, `2`, or `3` is accepted.
+9.  Run and test your program using the initial test records.
+10.  Test what happens when you try to serve or view a patient while the
     queue is empty.
 
 ## 8. Submission Requirements
